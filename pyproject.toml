@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "trialmatch_tool_evaluation"
+version = "0.1.0"
+description = ""
+authors = ["Louise Olgiati <louise.olgiati@lyon.unicancer.fr>", "Clément Brutti-Mairesse <clement.bruttimairesse@lyon.unicancer.fr>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/crcl-tm2/trialmatch-tool-evaluation"
+repository = "https://github.com/crcl-tm2/trialmatch-tool-evaluation"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+pillow = "^10.3.0"
+matplotlib = "^3.9.0"
+pandas = "^2.2.2"
+plotly = "5.22.0"
+kaleido = "0.2.1"
+numpy = "^2.0.0"
+scikit-learn = "^1.5.1"
+dataframe-image = "^0.2.4"
+seaborn = "^0.13.2"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "*"
+pytest = "*"
+mypy = "*"
+jupyter = "*"
+notebook = "*"
+ipykernel = "*"
+black = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+coverage = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
